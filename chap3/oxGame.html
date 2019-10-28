@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .cell {
+        width: 100px; height: 100px;
+        font-size: 60px; text-align: center;
+        cursor: pointer;
+      }
+    </style>
+    <script>
+      function clickMe() {
+        var cell = document.getElementById('cell');
+        var count = 0;
+        cell.addEventListener('click', () => {
+          if (count === 0) {
+            cell.textContent = "o";
+          } else {
+            cell.textContent = "x";
+          }
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <table border="1">
+      <tr>
+        <td class="cell" onclick="clickMe();" id="cell"></td>
+        <td class="cell"></td>
+        <td class="cell"></td>
+      </tr>
+      <tr>
+        <td class="cell"></td>
+        <td class="cell"></td>
+        <td class="cell"></td>
+      </tr>
+      <tr>
+        <td class="cell"></td>
+        <td class="cell"></td>
+        <td class="cell"></td>
+      </tr>
+    </table>
+  </body>
+</html>
