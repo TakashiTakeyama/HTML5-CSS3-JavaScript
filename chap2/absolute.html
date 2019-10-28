@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="css/stylesheet" href="stlyes.css">
+  </head>
+  <style>
+    div {
+      position: absolute; /* 全てのdivを
+      top/leftで絶対位置指定 */
+    }
+
+    #panel {
+      left: 100px;
+      top: 50px;
+      width: 300px;
+      height: 100px;
+      background-color: lightgreen;
+    }
+
+    .button {
+      width: 50px;
+      height: 25px;
+      color: whtie;
+      background-color: blue;
+      border: 5px solid yellow;
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .yes {
+      top: 20px; left: 70px;
+    }
+
+    .no {
+      top: 20px; left: 200px;
+    }
+  </style>
+  <body>
+    <div id="panel">
+      <div class="button yes">Yes</div>
+      <div class="button no">No</div>
+    </div>
+  </body>
+</html>
